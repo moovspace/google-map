@@ -1,0 +1,95 @@
+/* Map div style */
+.map {
+	float: left; width: 100%; height: 500px; border: 1px solid #eee;
+}
+
+/* InfoWindow html style */
+#info-window {
+	color: #fff;
+	padding: 10px;
+	text-align: left;
+	font-weight: 500;
+	min-width: 250px;
+	font-size: 15px;
+	font-family: 'Open Sans', Tahoma, Arial, sans-serif;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+#info-window i {
+	min-width: 20px;
+}
+#infoTitle {
+	font-weight: 700;
+	font-size: 18px;
+}
+
+/* style google info window */
+.gm-style-iw {
+	color: #fff !important;
+	background: #111111ee !important;
+	border-radius: 0px !important;
+}
+.poi-info-window div {
+	color: #fff !important;
+	background: transparent !important;
+	font-size: 14px;
+	font-weight: 400;
+	font-family: 'Open Sans', Tahoma, Arial, sans-serif;
+	padding: 0px;
+}
+.poi-info-window .title {
+	font-weight: 700;
+}
+.poi-info-window a {
+	font-weight: 700;
+	color: #5C5 !important;
+	background: transparent !important;
+}
+
+/* triangle bottom */
+.gm-style-iw-t {
+	position: relative !important;
+}
+.gm-style-iw-t::after {
+	position: absolute !important;
+	background: transparent !important;
+	box-shadow: none !important;
+	border: 0px !important;
+	border-top: 10px solid #111111ee !important;
+	border-left: 10px solid transparent !important;
+	border-right: 10px solid transparent !important;
+	width: 0;
+	height: 0;
+	border-style: inset;
+	box-sizing: border-box;
+	transform: translate(-50%, 0%) !important;
+}
+.gm-ui-hover-effect {
+	position: relative;
+	opacity: 1;
+	top: 5px !important;
+	right: 5px !important;
+	width: 15px !important;
+	height: 15px !important;
+	color: #fff !important;
+	background: transparent !important;
+}
+/* Close info fontawesome icon cross */
+.gm-ui-hover-effect::after {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	font-family: 'Font Awesome 5 Free';
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 900;
+	content: "\f00d";
+}
+.gm-ui-hover-effect:hover::after {
+	color: #f23 !important;
+}
+.gm-ui-hover-effect img {
+	display: none !important
+}
